@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivcross"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/cross"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_margin="10dp"/>-->
+
+    <RelativeLayout
+        android:id="@+id/rlone"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/ivnewprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/placeholder" />
+
+        <ImageView
+            android:id="@+id/ivaddprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/edit_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvname"
+        style="@style/Textview_Medium"
+        android:layout_below="@+id/rlone"
+        android:text="Name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_below="@id/tvname"
+        style="@style/Edittext"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter Name"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btsave"
+        style="@style/Button"
+        android:text="Save"
+        android:layout_below="@id/etname"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

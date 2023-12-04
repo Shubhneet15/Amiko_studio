@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/light_grey"
+        app:contentInsetStart="0dp">
+
+        <TextView
+            android:id="@+id/tvdialog"
+            style="@style/Textview_Medium"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Select"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:padding="16dp"
+            app:tint="@color/black" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvGallery"
+           style="@style/Textview_Medium"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:layout_margin="4dp"
+            android:text="Gallery"
+            android:background="@color/dark_grey"
+            android:textColor="@color/black"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvCamera"
+            style="@style/Textview_Medium"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:padding="16dp"
+            android:background="@color/dark_grey"
+            android:text="Camera"
+            android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@id/toolbar"
+        android:text="Upload Document"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+ />
+
+</RelativeLayout>

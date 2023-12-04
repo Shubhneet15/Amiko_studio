@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_white"
+    tools:context=".activities.RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/signTV"
+        style="@style/Textview"
+        android:text="SIGN UP"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/nameTV"
+        style="@style/Textview_Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signTV"
+        android:text="Name"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nameET"
+        style="@style/Edittext"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/nameTV"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:hint="Name"
+        android:elevation="6dp"
+       />
+
+
+    <TextView
+        android:id="@+id/emailTV"
+        style="@style/Textview_Medium"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameET"
+        android:text="Email"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/emailET"
+        style="@style/Edittext"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/emailTV"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Email"
+        android:layout_marginTop="10dp"
+        android:elevation="6dp"/>
+
+    <TextView
+        android:id="@+id/passwordTV"
+        style="@style/Textview_Medium"
+
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailET"
+        android:text="Password"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="10dp"
+        app:boxStrokeWidth="0dp"
+        app:passwordToggleTint="@color/black"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintEnabled="false"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTV"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="6dp"
+
+
+        app:passwordToggleEnabled="true">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passwordsET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="12dp"
+            android:hint="Password"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:fontFamily="@font/medium"
+            android:paddingVertical="14dp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/confirmPasswordTV"
+        style="@style/Textview_Medium"
+
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEt"
+        android:text="Confirm Password"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmPasswordEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="10dp"
+        app:boxStrokeWidth="0dp"
+        app:passwordToggleTint="@color/black"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintEnabled="false"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordTV"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="6dp"
+
+
+        app:passwordToggleEnabled="true">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/confirmPasswordsET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="12dp"
+            android:hint="Confirm Password"
+            android:maxLines="1"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:fontFamily="@font/medium"
+            android:paddingVertical="14dp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpBT"
+        style="@style/Button"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="SIGN UP"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:id="@+id/spamTV"
+        style="@style/Textview_Medium"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBT"
+       />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
